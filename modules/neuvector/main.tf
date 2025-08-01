@@ -15,6 +15,11 @@ resource "helm_release" "neuvector" {
     controller = {
       replicas = 1
     }
+    enforcer = {
+      containerd = {
+        enabled = true
+      }
+    }
 })]
 }
 
