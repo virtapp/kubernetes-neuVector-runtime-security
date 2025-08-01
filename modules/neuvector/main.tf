@@ -8,7 +8,13 @@ resource "helm_release" "neuvector" {
   chart      = "core"
   version    = "2.6.6" # or latest version you want to deploy
   # Optional: override default chart values
-  values = [
-    file("neuvector-values.yaml") # optional, for advanced config
-  ]
+  #values = [
+  #  file("./modules/neuvector/neuvector-values.yaml") # optional, for advanced config
+  #]
+  values = [yamlencode({
+    controller = {
+      replicas = 2
+    }
+})]
 }
+
