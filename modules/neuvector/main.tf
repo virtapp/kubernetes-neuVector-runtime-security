@@ -1,5 +1,4 @@
 
-
 resource "helm_release" "neuvector" {
   name             = "neuvector-core"
   namespace        = "neuvector"
@@ -7,25 +6,15 @@ resource "helm_release" "neuvector" {
 
   repository = "https://neuvector.github.io/neuvector-helm/"
   chart      = "core"
-  version    = "2.6.6"
-  # Optional: override default chart values
+  version    = "2.8.2"
+
   values = [yamlencode({
-  controller = {
-    replicas = 1
-  }
-  enforcer = {
-    containerd = {
-      enabled = true
+    controller = { replicas = 1 }
+    enforcer = {
+      privileged = true
+      containerd  = { enabled = true }
+      dockerSock  = { enabled = false }
     }
-    dockerSock = {
-      enabled = false
-    }
-    privileged = true  # important!
-  }
-  scanner = {
-    enabled = true
-  }
-})]
+    scanner = { enabled = true }
+  })]
 }
-
-
