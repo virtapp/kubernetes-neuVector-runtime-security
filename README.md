@@ -5,9 +5,9 @@ NeuVector Full Lifecycle Container Security Platform delivers the only cloud-nat
 
 🧱 Core Components
 ```
-✅ Runtime Threat Detection
-Detects malicious activity (reverse shells, crypto miners, port scans, etc.) using:
-## Process monitoring - File system activity - Network traffic inspection (L3–L7)
+✅ Runtime Threat Detection (reverse shells, crypto miners, port scans, etc.)
+Detects malicious activity :
+🧩 Process monitoring - File system activity - Network traffic inspection (L3–L7)
 ✅ Policy-as-Code ( You can define and enforce behavioral security policies as Kubernetes CRDs )
 ✅ Zero-Trust Network Security ( Microsegmentation of container-to-container communications )
 ✅ Admission Control ( Validates image scanning or labels before workload deployment )
