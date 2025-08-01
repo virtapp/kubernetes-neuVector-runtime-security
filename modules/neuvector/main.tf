@@ -12,17 +12,35 @@ resource "helm_release" "neuvector" {
     rbac = {
       create = true
     }
-    controller = { replicas = 1 }
+
+    controller = {
+      replicas = 1
+    }
 
     enforcer = {
       privileged = true
-      containerd  = { enabled = true }
-      dockerSock  = {
+
+      # Disable Docker socket usage entirely
+      dockerSock = {
         enabled = false
         mountPath = ""
       }
+
+      # Explicitly enable containerd
+      containerd = {
+        enabled = true
+        sockPath = "/run/k3s/containerd/containerd.sock"  # For K3s
+      }
+
+      # Some versions of NeuVector also respect this field:
+      runtime = "containerd"
+
+      # Optional fallback path override (can help older agents)
+      runtimePath = "/run/k3s/containerd/containerd.sock"
     }
 
-    scanner = { enabled = true }
+    scanner = {
+      enabled = true
+    }
   })]
 }
