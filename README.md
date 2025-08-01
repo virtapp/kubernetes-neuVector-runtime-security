@@ -16,15 +16,15 @@ Detects malicious activity :
 ```
 
 
-🔌 Supported Event Sources
+🔌 Native Integration  
 ```
-GitHub / GitLab / Bitbucket Webhooks
-S3 (MinIO, AWS)
-Kafka / NATS / MQTT / AMQP
-Webhooks (HTTP)
-Calendar/Cron (scheduled events)
-GCP Pub/Sub, AWS SNS/SQS
-Kubernetes CRDs (like Velero backup events)
+Preparing for Deployment
+CI/CD Automated Scanning
+Security Policy as Code
+Enterprise Authentication & SSO
+Network Segmentation and Threats
+Manage Vulnerabilities & Compliance
+NeuVector API Reference
 ```
 
 🚀 
