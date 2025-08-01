@@ -11,7 +11,7 @@ Detects malicious activity :
 ✅ Policy-as-Code ( You can define and enforce behavioral security policies as Kubernetes CRDs )
 ✅ Zero-Trust Network Security ( Microsegmentation of container-to-container communications )
 ✅ Admission Control ( Validates image scanning or labels before workload deployment )
-✅ UI and CLI Support ( You can manage policies and view events via a web UI or through Knative CRDs )
+✅ UI and CLI Support ( You can manage policies and view events via a web UI )
 
 ```
 
