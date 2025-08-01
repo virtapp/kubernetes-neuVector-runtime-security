@@ -10,11 +10,16 @@ resource "helm_release" "neuvector" {
 
   values = [yamlencode({
     controller = { replicas = 1 }
+
     enforcer = {
       privileged = true
       containerd  = { enabled = true }
-      dockerSock  = { enabled = false }
+      dockerSock  = {
+        enabled = false
+        mountPath = ""
+      }
     }
+
     scanner = { enabled = true }
   })]
 }
