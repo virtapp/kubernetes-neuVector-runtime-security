@@ -9,9 +9,7 @@ resource "helm_release" "neuvector" {
   version    = "2.8.2"
 
   values = [yamlencode({
-    rbac = {
-      create = true
-    }
+    rbac = true
 
     controller = {
       replicas = 1
