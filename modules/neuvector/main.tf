@@ -13,7 +13,7 @@ resource "helm_release" "neuvector" {
   #]
   values = [yamlencode({
     controller = {
-      replicas = 2
+      replicas = 1
     }
 })]
 }
