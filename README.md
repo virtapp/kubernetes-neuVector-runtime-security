@@ -20,10 +20,10 @@ Detects malicious activity :
 ```
 Preparing for Deployment
 CI/CD Automated Scanning
-Security Policy as Code
-Enterprise Authentication & SSO
 Network Segmentation and Threats
+Security Policy as Code
 Manage Vulnerabilities & Compliance
+Enterprise Authentication & SSO
 NeuVector API Reference
 ```
 
