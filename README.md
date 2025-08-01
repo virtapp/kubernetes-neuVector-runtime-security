@@ -7,13 +7,11 @@ NeuVector Full Lifecycle Container Security Platform delivers the only cloud-nat
 ```
 ✅ Runtime Threat Detection
 Detects malicious activity (reverse shells, crypto miners, port scans, etc.) using:
-## Process monitoring
-## File system activity
-## Network traffic inspection (L3–L7)
+## Process monitoring - File system activity - Network traffic inspection (L3–L7)
 ✅ Policy-as-Code ( You can define and enforce behavioral security policies as Kubernetes CRDs )
 ✅ Zero-Trust Network Security ( Microsegmentation of container-to-container communications )
 ✅ Admission Control ( Validates image scanning or labels before workload deployment )
-✅ UI and CLI Support ( You can manage policies and view events via a web UI or through Kubernetes-native CRDs )
+✅ UI and CLI Support ( You can manage policies and view events via a web UI or through Knative CRDs )
 
 ```
 
